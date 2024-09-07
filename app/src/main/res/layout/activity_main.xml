@@ -11,24 +11,71 @@
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/nama" />
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:hint="Masukkan angka pertama"
+            android:inputType="numberDecimal" />
 
-        <TextView
-            android:id="@+id/textView"
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:hint="Masukkan angka kedua"
+            android:inputType="numberDecimal" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nim" />
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonTambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonKurang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonKali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonBagi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="24sp" />
+        </RadioGroup>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="352dp"
+            android:layout_height="48dp"
+            android:text="Hitung" />
 
     </LinearLayout>
 
